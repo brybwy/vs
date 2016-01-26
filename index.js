@@ -1,9 +1,11 @@
 var v={};
 
-v.v = function(cb) {
+v.version = function(cb, packagefile) {
 	var fs = require('fs');
 	var p;
-	fs.readFile('./package.json', 'utf8', function(er, d) {
+	var packagefile = packagefile || './package.json';
+
+	fs.readFile(packagefile, 'utf8', function(er, d) {
 		if(er) {
 			cb('Error in opening package.json ' + er)
 		}
@@ -23,7 +25,7 @@ v.v = function(cb) {
 	})
 };
 
-v.s = function(str){
+v.status = function(str){
 	if(str){
 		return str;
 	}
