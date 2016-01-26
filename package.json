@@ -1,0 +1,23 @@
+{
+  "name": "show-version-status",
+  "version": "1.0.0",
+  "description": "Show version and status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brybwy/vs.git"
+  },
+  "keywords": [
+    "version",
+    "status",
+    "package.json"
+  ],
+  "author": "Roy Bai <brybwy@gmail.com>",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/brentertz/scapegoat/issues"
+  }
+}
