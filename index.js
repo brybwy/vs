@@ -1,7 +1,7 @@
 var v={};
+var fs = require('fs');
 
 v.version = function(cb, packagefile) {
-	var fs = require('fs');
 	var p;
 	var packagefile = packagefile || './package.json';
 
